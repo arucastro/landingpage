@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #200226;
+    --white-color: #fff;
+    --gap: 3rem;
+    --light-grey-color: #eee;
+}
+
+.main-bg {
+    background-image: url(../img/endless-constellation.svg);
+    background-size: auto;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.white-bg{
+    background: var(--white-color);
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.menu h1{
+    font-size: 2.3rem;
+}
+
+.menu h1 a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.menu ul li a:hover {
+    display: block;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-weight: 600;
+    transition: all 150ms ease-in-out;
+}
+
+.menu-content {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
