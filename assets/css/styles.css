@@ -177,3 +177,18 @@
 .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(2deg)
 }
+
+.responsive-table{
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.table-content {
+    max-width: 70rem;
+    flex-flow: column nowrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
+}
