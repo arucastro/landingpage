@@ -249,7 +249,6 @@ body .full-width {
     font-size: 1.6rem;
     font-style: italic;
     margin-bottom: 3rem;
-    ;
 }
 
 .footer {
@@ -261,4 +260,28 @@ body .full-width {
 
 .footer a {
     color: var(--primary-color);
+}
+
+@media all and (max-width: 800px) {
+
+    .intro-content,
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .gallery-img img {
+        width: 80%;
+        max-width: 80%;
+        max-height: 80%;
+    }
+
+    .grid-top-content {
+        display: block;
+    }
 }
