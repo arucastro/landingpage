@@ -25,6 +25,7 @@
 
 .section {
     min-height: 100vh;
+    min-width: 100vh;
 }
 
 .menu h1 {
@@ -74,6 +75,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    white-space: nowrap;
 }
 
 .menu-spacing {
@@ -178,17 +180,85 @@
     transform: translate(-3%, 3%) scale(1.2) rotate(2deg)
 }
 
-.responsive-table{
+.responsive-table {
     overflow-y: auto;
     overflow-x: auto;
 }
 
 .table-content {
-    max-width: 70rem;
+    max-width: 80rem;
     flex-flow: column nowrap;
     height: 100vh;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-size: 2.5rem;
+}
+
+.contact-form {
+    grid-column: span 2;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-group {
+    flex: 1 1 32rem;
+}
+
+.form-group label {
+    display: block;
+}
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group input,
+.form-group textarea {
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    height: 80%;
+    font-size: 2.5rem;
+}
+
+.form-group button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.form-grid legend {
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+    ;
+}
+
+.footer {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.footer a {
+    color: var(--primary-color);
 }
